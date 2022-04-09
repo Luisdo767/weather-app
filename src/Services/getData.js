@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const getData = async (lat, long) => {
-    const URL = `https://api.weatherapi.com/v1/current.json?key=e26de611417245dfaac164812220504&q=${lat},${long}&aqi=no&lang=es`
+    const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=aa2a13a9fedde893c962bf2ad2e15882&units=metric&lang=es`
     const req = await axios.get(URL)
     return req
 }

@@ -18,11 +18,11 @@ function App() {
       const long = pos.coords.longitude 
       getData(lat, long)
         .then((res)=>{
-          setTemp(res.data.current.temp_c)
-          setWeather(res.data.current.condition.text)
-          setCountry(res.data.location.country)
-          setCity(res.data.location.name)
-          setIcon(res.data.current.condition.icon)
+          setTemp(res.data.main.temp)
+          setWeather(res.data.weather[0].description)
+          setCountry(res.data.sys.country)
+          setCity(res.data.name)
+          setIcon(`http://openweathermap.org/img/wn/${res.data.weather[0].icon}@2x.png`)
         })
         .catch((err)=>{
           console.error(err)

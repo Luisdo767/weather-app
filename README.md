@@ -1,6 +1,6 @@
 # Weather app
 
-A page that uses weather api to show the users current weather
+A page that uses openWeather api to show the users current weather
 
 ## Link
 weather-page-luisdo.netlify.app
