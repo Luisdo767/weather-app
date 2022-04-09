@@ -1,6 +1,5 @@
 import './App.css';
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
 import getData from './Services/getData';
 
 function App() {
